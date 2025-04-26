@@ -1,50 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="imagex/png" href="assets/logoSalao.ico">
-    <title>Black Skull Barber Shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salão de Beleza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/logoSalao.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-    <a href="index.html"><img id="logo" src="assets/logoSalao.png" alt="Logo do Adilson Suplementos"><p>Salão e Studio</p></a>
-</header>
 <body>
-    <section>
-        <h3>Aceitamos dinheiro, pix e cartão de débito ou crédito.</h3>
-    </section>
-    <section>
-        <div class="Cabeca">
-            <p>Escolha o seu serviço</p>
-        </div>
-    </section>
-    <section>
-        <div class="carrossel">
-            <input type="radio" name="slide" id="slide1" checked>
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-          
-            <div class="slides">
-              <div class="slide">
-                <img src="assets/img itens/chapinha.png" alt="Imagem 1">
-              </div>
-              <div class="slide">
-                <img src="assets/img itens/corte.png" alt="Imagem 2">
-              </div>
-              <div class="slide">
-                <img src="assets/img itens/escova.png" alt="Imagem 3">
-              </div>
-            </div>
-          
-            <div class="navegacao">
-              <label for="slide1" class="seta">&#10094;</label>
-              <label for="slide2" class="seta">&#10095;</label>
-            </div>
-          </div>
-    </section>
-    
+
+  <!-- Logo -->
+  <header>
+    <img src="assets/logoSalao.png" alt="Logo do Salão" class="logo">
+    <h1>Bem-vindo ao Nosso Salão</h1>
+    <h2>Realce sua beleza conosco</h2>
+  </header>
+
+  <!-- Carrossel -->
+  <section class="carrossel">
+    <div class="slides">
+      <img src="assets/img itens/chapinha.png" alt="Imagem 1">
+      <img src="assets/img itens/corte.png" alt="Imagem 2">
+      <img src="assets/img itens/escova.png" alt="Imagem 3">
+      <img src="assets/img itens/hidratação.jpg" alt="Imagem 4">
+      <img src="assets/img itens/tintura.png" alt="Imagem 5">
+    </div>
+  </section>
+
+  <!-- Agendamento -->
+  <section class="agendamento">
+    <h3>Agende o seu serviço!</h3>
+    <p><strong>Preço:</strong> A partir de R$99,00</p>
+
+    <form id="formAgendamento">
+      <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="Número do WhatsApp" required>
+      
+      <select id="servico" name="servico" required>
+        <option value="">Escolha o serviço</option>
+        <option value="Corte de cabelo">Corte de cabelo</option>
+        <option value="Coloração">Coloração</option>
+        <option value="Manicure e Pedicure">Manicure e Pedicure</option>
+        <option value="Tratamento Capilar">Tratamento Capilar</option>
+        <option value="Maquiagem">Maquiagem</option>
+      </select>
+
+      <input type="date" id="data" name="data" required>
+
+      <textarea id="observacao" name="observacao" placeholder="Observações"></textarea>
+
+      <button type="submit">Confirmar Agendamento</button>
+    </form>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 <footer>
     <a href="https://www.instagram.com/blackskull.barbers/" target="_blank"><img id="logoImg" src="assets/logo instagram.png" alt="Logo Instagram"> Black Skull Barber Shop</a>

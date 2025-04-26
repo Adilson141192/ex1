@@ -109,18 +109,32 @@ button:hover {
   background-color: #c0808c;
 }
 
-
 footer {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    margin: 15px;
-    color: var(--primary);
-    font-size: 14px;
-    font-weight: bold;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 30px;
 }
 
-footer p {
-    text-align: center;
-    font-size: 14px;
+.insta-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #d19aa3;
+  font-weight: bold;
+  font-size: 16px;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.insta-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.frase-footer {
+  color: #555;
+  font-size: 14px;
+  margin: 5px 0;
 }

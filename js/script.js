@@ -42,7 +42,7 @@ const precos = {
   
     const mensagemCodificada = encodeURIComponent(mensagem);
   
-    const numeroSalao = "5511999999999"; // <-- Trocar para seu número!
+    const numeroSalao = "551198996215367"; // <-- Trocar para seu número!
     const link = `https://wa.me/${numeroSalao}?text=${mensagemCodificada}`;
   
     window.open(link, '_blank');
